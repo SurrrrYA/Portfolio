@@ -31,7 +31,7 @@ function EditProject({ project, onSuccess, onCancel }) {
       return image
     }
 
-    return `http://127.0.0.1:8000/storage/${image}`
+    return `https://api.portfoliosurya.my.id/api/storage/${image}`
   }
 
   // =========================================================
@@ -362,7 +362,7 @@ function EditProject({ project, onSuccess, onCancel }) {
       })
 
       const response = await fetch(
-        `http://127.0.0.1:8000/api/projects/${project.id}`,
+        `https://api.portfoliosurya.my.id/api/projects/${project.id}`,
         {
           method: 'POST',
           headers: {

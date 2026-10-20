@@ -131,7 +131,7 @@ function AdminLogin({ onLoginSuccess }) {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/api/login',
+        'https://api.portfoliosurya.my.id/api/login',
         {
           method: 'POST',
           headers: {
@@ -187,7 +187,7 @@ function AdminLogin({ onLoginSuccess }) {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/api/forgot-password',
+        'https://api.portfoliosurya.my.id/api/forgot-password',
         {
           method: 'POST',
           headers: {
@@ -238,7 +238,7 @@ function AdminLogin({ onLoginSuccess }) {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/api/verify-reset-otp',
+        'https://api.portfoliosurya.my.id/api/verify-reset-otp',
         {
           method: 'POST',
           headers: {
@@ -310,7 +310,7 @@ function AdminLogin({ onLoginSuccess }) {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/api/reset-password',
+        'https://api.portfoliosurya.my.id/api/reset-password',
         {
           method: 'POST',
           headers: {

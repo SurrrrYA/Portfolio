@@ -17,7 +17,7 @@ function ProjectDetail({ projectId, onBack }) {
     setActiveImage(0)
 
     fetch(
-      `http://127.0.0.1:8000/api/projects/${projectId}`
+      `https://api.portfoliosurya.my.id/api/projects/${projectId}`
     )
       .then((response) => {
         if (!response.ok) {
@@ -51,7 +51,7 @@ function ProjectDetail({ projectId, onBack }) {
       return image
     }
 
-    return `http://127.0.0.1:8000/storage/${image}`
+    return `https://api.portfoliosurya.my.id/api/storage/${image}`
   }
 
   /* =========================================================
